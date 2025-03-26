@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+      - "443:443"
+      - "1000:1000"
+    restart: unless-stopped
+    volumes:
+      - ./your-website:/var/www/html
