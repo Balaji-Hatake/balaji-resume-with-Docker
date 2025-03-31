@@ -22,10 +22,6 @@
         "template"
     ],
     "homepage": "https://startbootstrap.com/theme/resume",
-    "bugs": {
-        "url": "https://github.com/StartBootstrap/startbootstrap-resume/issues",
-        "email": "feedback@startbootstrap.com"
-    },
     "license": "MIT",
     "author": "Start Bootstrap",
     "contributors": [
