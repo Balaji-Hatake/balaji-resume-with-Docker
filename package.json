@@ -33,7 +33,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/StartBootstrap/startbootstrap-resume.git"
+        "url": "https://github.com/Balaji-Hatake/balaji-resume.git"
     },
     "dependencies": {
         "bootstrap": "5.2.3"
