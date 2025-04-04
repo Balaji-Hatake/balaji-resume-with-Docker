@@ -5,7 +5,5 @@ services:
     ports:
       - "8080:80"
       - "443:443"
-      - "1000:1000"
+      - "10000:10000"
     restart: unless-stopped
-    volumes:
-      - ./your-website:/var/www/html
