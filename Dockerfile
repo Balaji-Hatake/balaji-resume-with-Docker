@@ -6,12 +6,16 @@ RUN apt update && apt install -y apache2 wget perl shared-mime-info nodejs npm
 # Set working directory
 WORKDIR /var/www/html
 
+# Copy package.json first for caching
+COPY package.json package-lock.json ./
+
+# Install dependencies
+RUN npm install
+
 # Copy website files
 COPY . /var/www/html/
 
-# Copy package.json and install dependencies
-COPY package.json package-lock.json ./
-RUN npm install
+# Build the project
 RUN npm run build
 
 # Copy built assets to the root
